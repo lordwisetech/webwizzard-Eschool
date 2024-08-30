@@ -16,13 +16,13 @@
             <i class="bi bi-pencil-square me-2"></i>
             <button class="btn btn-outline-light">Take Quiz</button>
           </a>
-          <a href="/dashboard" class="text-white d-flex align-items-center">
+          <a href="/assignment" class="text-white d-flex align-items-center">
             <i class="bi bi-list-task me-2"></i>
-            <button class="btn btn-outline-light">Assignments</button>
+            <button class="btn btn-outline-light">TAsk</button>
           </a>
-          <a href="/dashboard" class="text-white d-flex align-items-center">
+          <a href="/submit" class="text-white d-flex align-items-center">
             <i class="bi bi-file-earmark-arrow-up me-2"></i>
-            <button class="btn btn-outline-light">Submit Assignment</button>
+            <button class="btn btn-outline-light">Submit task</button>
           </a>
         </div>
   

@@ -6,6 +6,9 @@ import lessonPage from '@/views/lessonPage.vue';
 
 import Login from '@/views/login.vue';
 import Register from '@/views/register.vue';
+import newAssignment from '@/views/newAssignment.vue';
+import submit from '@/views/submit.vue';
+
 
 
 const routes = [
@@ -36,6 +39,17 @@ const routes = [
     name: 'register',
     component: Register
   },
+  {
+    path: '/assignment',
+    name: 'assignment',
+    component: newAssignment
+  },
+  {
+    path: '/submit',
+    name: 'assignsubmitment',
+    component: submit
+  }
+
  
 ];
 

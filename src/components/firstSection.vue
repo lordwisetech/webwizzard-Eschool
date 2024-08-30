@@ -11,7 +11,15 @@ import {ref} from 'vue'
                  everything</h5>
             <p>Our big sale is on. Get courses from ₦3,900 
                 <br>for your career & your life. Sale ends August 29.</p>
+
              <br>
+             
+             <a href="/login" class="text-white  align-items-center">
+            
+            <button class="btn btn-outline-light">Get Started </button>
+          </a>
+           
+         
         </di>
         </div>
     </div>
