@@ -6,6 +6,7 @@ import lessonPage from '@/views/lessonPage.vue';
 
 import Login from '@/views/login.vue';
 import Register from '@/views/register.vue';
+import RegisterPage from '@/views/RegisterPage.vue';
 import newAssignment from '@/views/newAssignment.vue';
 import submit from '@/views/submit.vue';
 
@@ -37,7 +38,7 @@ const routes = [
   {
     path: '/register',
     name: 'register',
-    component: Register
+    component: RegisterPage
   },
   {
     path: '/assignment',

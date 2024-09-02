@@ -80,7 +80,7 @@ export default {
   },
   async mounted() {
     try {
-      const response = await axios.get('https://webwizzard-server.onrender.com/api/videos', {
+      const response = await axios.get('https://webwizzard-server.vercel.app/api/videos', {
         params: {
           tag: this.$route.params.name,
         },
