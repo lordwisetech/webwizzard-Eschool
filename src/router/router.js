@@ -11,15 +11,11 @@ import newAssignment from '@/views/newAssignment.vue';
 import submit from '@/views/submit.vue';
 import upload from '@/views/upload.vue';
 import imguplod from '@/views/imguplod.vue';
-
+import home from '@/views/home.vue';
 
 
 const routes = [
-  {
-    path: '/',
-    name: 'home',
-    component: landingPage
-  },
+  
   {
     path: '/category/:name',
     name: 'dasboard',
@@ -43,9 +39,9 @@ const routes = [
     component: RegisterPage
   },
   {
-    path: '/assignment',
-    name: 'assignment',
-    component: newAssignment
+    path: '/',
+    name: '',
+    component: landingPage
   },
   {
     path: '/submit',
@@ -54,7 +50,7 @@ const routes = [
   },
   {
     path: '/upload',
-    name: 'home',
+    name: '',
     component: imguplod
   },
 
