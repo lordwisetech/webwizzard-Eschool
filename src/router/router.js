@@ -9,6 +9,8 @@ import Register from '@/views/register.vue';
 import RegisterPage from '@/views/RegisterPage.vue';
 import newAssignment from '@/views/newAssignment.vue';
 import submit from '@/views/submit.vue';
+import upload from '@/views/upload.vue';
+import imguplod from '@/views/imguplod.vue';
 
 
 
@@ -49,7 +51,12 @@ const routes = [
     path: '/submit',
     name: 'assignsubmitment',
     component: submit
-  }
+  },
+  {
+    path: '/upload',
+    name: 'home',
+    component: imguplod
+  },
 
  
 ];

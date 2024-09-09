@@ -14,7 +14,7 @@ import {ref} from 'vue'
 
              <br>
              
-             <a href="/login" class="text-white  align-items-center">
+             <a href="/lesson" class="text-white  align-items-center">
             
             <button class="btn btn-outline-light">Get Started </button>
           </a>

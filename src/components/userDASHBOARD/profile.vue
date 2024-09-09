@@ -9,7 +9,7 @@ const pagename = ref("THIS IS YOUR DASHBOARD")
     <!-- Left Section (Image, Name, Status) -->
     <div class="flex flex-col items-start ">
      
-      <p class="text-base font-bold text-white font-pj"> Matthew Mayowa</p>
+      <p class="text-base font-bold text-white font-pj">Welcome</p>
       
       <div class="flex items-center pb-3">
         <p class="text-white"> Status:</p>
@@ -18,10 +18,7 @@ const pagename = ref("THIS IS YOUR DASHBOARD")
     </div>
    
    
-    <!-- Right Section (User Dashboard) -->
-    <div class="text-right">
-      <p class="text-base font-bold text-white text-gray-900 font-pj">User Dashboard</p>
-    </div>
+    
   </div>
 </div>
 

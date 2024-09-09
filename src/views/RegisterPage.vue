@@ -1,45 +1,41 @@
 <template>
-  <div class="register text-white">
-    <h2>Register</h2>
+  <div>
+    <h1>Register</h1>
     <form @submit.prevent="register">
-      <div>
-        <label>Username:</label>
-        <input type="text" v-model="username" required />
-      </div>
-      <div>
-        <label>Password:</label>
-        <input type="password" v-model="password" required />
-      </div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" v-model="username" />
+      <br />
+      <label for="password">Password:</label>
+      <input type="password" id="password" v-model="password" />
+      <br />
       <button type="submit">Register</button>
     </form>
-    <p class="text-white" v-if="message">{{ message }}</p>
+    <p v-if="success">User created successfully!</p>
   </div>
 </template>
 
 <script>
-import AuthService from '@/services/Authservice';
-
-
 export default {
   data() {
     return {
       username: '',
       password: '',
-      message: '',
-    };
+      success: false
+    }
   },
   methods: {
-    async register() {
-      try {
-        const response = await AuthService.register({
-          username: this.username,
-          password: this.password,
-        });
-        this.message = response.data.message;
-      } catch (error) {
-        this.message = error.response.data.message;
-      }
-    },
-  },
-};
+    register() {
+      axios.post('http://localhost:3000/register', {
+        username: this.username,
+        password: this.password
+      })
+      .then(response => {
+        this.success = true;
+      })
+      .catch(error => {
+        console.error(error);
+      });
+    }
+  }
+}
 </script>
